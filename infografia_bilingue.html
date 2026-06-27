@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaña Bilingüe - Protege tu Identidad Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e2e8f0; /* Fondo general fuera de la infografía */
+        }
+
+        /* Contenedor principal de la infografía */
+        .infographic-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+
+        /* Patrones de fondo tecnológicos */
+        .bg-tech-grid {
+            background-image: 
+                linear-gradient(to right, rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .bg-tech-grid-dark {
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        .bg-circuit {
+            background-color: #0f172a; /* slate-900 */
+            background-image: radial-gradient(circle at 100% 100%, rgba(6, 182, 212, 0.1) 0, transparent 60%), 
+                              radial-gradient(circle at 0% 0%, rgba(6, 182, 212, 0.15) 0, transparent 50%);
+        }
+
+        .bg-circuit-light {
+            background-image: radial-gradient(circle at 100% 0%, rgba(6, 182, 212, 0.05) 0, transparent 40%), 
+                              radial-gradient(circle at 0% 100%, rgba(59, 130, 246, 0.05) 0, transparent 40%);
+        }
+
+        /* Conectores visuales verticales */
+        .vertical-line {
+            position: relative;
+        }
+        .vertical-line::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -40px;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 40px;
+            background: linear-gradient(to bottom, #06b6d4, transparent);
+            z-index: 10;
+        }
+        
+        .lang-badge {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            padding: 2px 6px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        .lang-es { background-color: rgba(6, 182, 212, 0.1); color: #0891b2; }
+        .lang-en { background-color: rgba(148, 163, 184, 0.1); color: #64748b; }
+        .dark .lang-es { background-color: rgba(34, 211, 238, 0.2); color: #67e8f9; }
+        .dark .lang-en { background-color: rgba(148, 163, 184, 0.2); color: #94a3b8; }
+    </style>
+</head>
+<body class="py-10 px-4 text-slate-800">
+
+    <!-- INFO HEADER -->
+    <div class="text-center mb-8 max-w-4xl mx-auto">
+        <h1 class="text-2xl font-bold text-slate-800">Campaña Bilingüe de Ciberseguridad</h1>
+    </div>
+
+    <!-- INFOGRAPHIC CONTAINER -->
+    <div class="infographic-container relative">
+
+        <!-- ==========================================
+             SECCIÓN 1: PORTADA / HEADER
+             ========================================== -->
+        <header class="bg-circuit text-white px-10 py-24 text-center relative overflow-hidden vertical-line">
+            <!-- Background effects -->
+            <div class="absolute inset-0 bg-tech-grid-dark opacity-50"></div>
+            <div class="absolute top-1/4 right-0 w-64 h-64 bg-cyan-500 rounded-full mix-blend-multiply filter blur-[80px] opacity-30"></div>
+            
+            <div class="relative z-10 flex flex-col items-center">
+                <div class="w-24 h-24 bg-slate-800/80 rounded-2xl border border-cyan-400/30 flex items-center justify-center mb-8 backdrop-blur-md shadow-[0_0_30px_rgba(6,182,212,0.3)]">
+                    <i data-lucide="shield-check" class="text-cyan-400 w-12 h-12"></i>
+                </div>
+
+                <div class="space-y-4 mb-10">
+                    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-white">
+                        PROTEGE TU <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">IDENTIDAD DIGITAL</span>
+                    </h1>
+                    <div class="h-px w-24 bg-cyan-400 mx-auto"></div>
+                    <h2 class="text-2xl md:text-3xl font-light text-cyan-200 tracking-wide">
+                        PROTECT YOUR DIGITAL IDENTITY
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-3xl mt-8">
+                    <div class="border-l-2 border-cyan-500 pl-4">
+                        <span class="lang-badge dark lang-es mb-2 inline-block">ES</span>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            La identidad digital se ha convertido en uno de los activos más valiosos en la era de la información. Cada interacción en internet deja un rastro de datos que puede ser utilizado tanto para fines legítimos como maliciosos. Comprender cómo protegerla es fundamental para preservar la privacidad y la reputación personal.
+                        </p>
+                    </div>
+                    <div class="border-l-2 border-slate-600 pl-4">
+                        <span class="lang-badge dark lang-en mb-2 inline-block">EN</span>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Digital identity has become one of the most valuable assets in the information age. Every internet interaction leaves a data trail that can be used for legitimate or malicious purposes. Understanding how to protect it is fundamental to preserving privacy and personal reputation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ==========================================
+             SECCIÓN 2: ¿QUÉ ES? / WHAT IS?
+             ========================================== -->
+        <section class="py-20 px-10 bg-white bg-tech-grid bg-circuit-light relative vertical-line">
+            <div class="text-center mb-12 relative z-10">
+                <i data-lucide="scan-face" class="w-10 h-10 text-cyan-600 mx-auto mb-4"></i>
+                <h2 class="text-3xl font-extrabold text-slate-900">¿QUÉ ES LA IDENTIDAD DIGITAL?</h2>
+                <h3 class="text-xl font-medium text-slate-500 italic mt-1">What is digital identity?</h3>
+            </div>
+
+            <div class="max-w-4xl mx-auto relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <div class="mb-6">
+                            <span class="lang-badge lang-es mb-2 inline-block">ES</span>
+                            <p class="text-slate-700 leading-relaxed text-sm text-justify">
+                                Es el conjunto de datos, características, actividades y relaciones que una persona genera y mantiene dentro de entornos digitales. Esta identidad está conformada por información compartida en redes sociales, correos, historiales de navegación y cualquier dato que identifique a un individuo.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="lang-badge lang-en mb-2 inline-block">EN</span>
+                            <p class="text-slate-500 leading-relaxed text-sm italic text-justify">
+                                It is the collection of data, characteristics, activities, and relationships that a person generates and maintains within digital environments. This identity consists of information shared on social networks, emails, browsing histories, and any data that identifies an individual.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 shadow-lg">
+                        <h4 class="text-sm font-bold text-slate-900 uppercase mb-4 text-center border-b border-slate-200 pb-2">
+                            Componentes / Components
+                        </h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3">
+                                <div class="bg-cyan-100 p-2 rounded text-cyan-600"><i data-lucide="share-2" class="w-4 h-4"></i></div>
+                                <div>
+                                    <p class="text-sm font-bold text-slate-800">Redes sociales</p>
+                                    <p class="text-xs text-slate-500">Social media networks</p>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="bg-cyan-100 p-2 rounded text-cyan-600"><i data-lucide="mail" class="w-4 h-4"></i></div>
+                                <div>
+                                    <p class="text-sm font-bold text-slate-800">Correos electrónicos</p>
+                                    <p class="text-xs text-slate-500">Email accounts</p>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="bg-cyan-100 p-2 rounded text-cyan-600"><i data-lucide="globe" class="w-4 h-4"></i></div>
+                                <div>
+                                    <p class="text-sm font-bold text-slate-800">Historiales de navegación</p>
+                                    <p class="text-xs text-slate-500">Browsing histories</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-10 bg-slate-800 text-white p-5 rounded-lg text-center shadow-md">
+                    <p class="text-sm font-medium text-cyan-100 mb-1">Según ENISA / According to ENISA:</p>
+                    <p class="text-sm italic">"Una representación virtual utilizada para acceder a servicios y establecer relaciones en línea."</p>
+                    <p class="text-xs text-slate-400 mt-1">"A virtual representation used to access services and establish relationships online."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN 3: RIESGOS / RISKS
+             ========================================== -->
+        <section class="py-20 px-10 bg-slate-100 relative vertical-line border-t border-slate-200">
+            <div class="text-center mb-16">
+                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4 border border-red-200 shadow-sm">
+                    <i data-lucide="alert-triangle" class="w-8 h-8 text-red-500"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-900">PRINCIPALES RIESGOS</h2>
+                <h3 class="text-xl font-medium text-slate-500 italic mt-1">Main Threats & Risks</h3>
+                <p class="text-sm text-slate-600 mt-4 max-w-2xl mx-auto">La dependencia digital ha incrementado la exposición de información. / Digital dependency has increased information exposure.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                
+                <!-- Riesgo 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i data-lucide="fishing" class="w-6 h-6 text-red-500"></i>
+                        <h3 class="text-lg font-bold text-slate-900">1. Phishing</h3>
+                    </div>
+                    <div class="space-y-3 pl-9">
+                        <p class="text-sm text-slate-700"><span class="lang-badge lang-es mr-1">ES</span>Técnicas de engaño mediante correos o sitios web falsos para robar credenciales.</p>
+                        <p class="text-xs text-slate-500 italic"><span class="lang-badge lang-en mr-1">EN</span>Deceptive techniques via fake emails or websites to steal credentials.</p>
+                    </div>
+                </div>
+
+                <!-- Riesgo 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i data-lucide="users-2" class="w-6 h-6 text-red-500"></i>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 leading-tight">2. Ingeniería Social</h3>
+                            <p class="text-xs text-slate-500 font-medium">Social Engineering</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 pl-9">
+                        <p class="text-sm text-slate-700"><span class="lang-badge lang-es mr-1">ES</span>Manipulación psicológica para obtener acceso a datos sensibles.</p>
+                        <p class="text-xs text-slate-500 italic"><span class="lang-badge lang-en mr-1">EN</span>Psychological manipulation to gain access to sensitive data.</p>
+                    </div>
+                </div>
+
+                <!-- Riesgo 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i data-lucide="database-zap" class="w-6 h-6 text-red-500"></i>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 leading-tight">3. Filtraciones de Datos</h3>
+                            <p class="text-xs text-slate-500 font-medium">Data Leaks / Breaches</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 pl-9">
+                        <p class="text-sm text-slate-700"><span class="lang-badge lang-es mr-1">ES</span>Brechas en empresas que exponen información privada almacenada.</p>
+                        <p class="text-xs text-slate-500 italic"><span class="lang-badge lang-en mr-1">EN</span>Corporate breaches exposing stored private information.</p>
+                    </div>
+                </div>
+
+                <!-- Riesgo 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-3">
+                        <i data-lucide="key-square" class="w-6 h-6 text-red-500"></i>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 leading-tight">4. Robo de Credenciales</h3>
+                            <p class="text-xs text-slate-500 font-medium">Credential Theft</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 pl-9">
+                        <p class="text-sm text-slate-700"><span class="lang-badge lang-es mr-1">ES</span>Uso de malware o bases filtradas para acceder a cuentas personales.</p>
+                        <p class="text-xs text-slate-500 italic"><span class="lang-badge lang-en mr-1">EN</span>Use of malware or leaked databases to access personal accounts.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN 4: CONSECUENCIAS / CONSEQUENCES
+             ========================================== -->
+        <section class="py-20 px-10 bg-slate-900 text-white relative vertical-line bg-circuit bg-tech-grid-dark">
+            <div class="text-center mb-12 relative z-10">
+                <h2 class="text-3xl font-extrabold text-cyan-400">CONSECUENCIAS DEL ROBO</h2>
+                <h3 class="text-xl font-medium text-slate-400 italic mt-1">Consequences of Identity Theft</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto relative z-10">
+                
+                <div class="bg-slate-800/80 border border-slate-700 p-4 rounded flex items-center gap-4 backdrop-blur-sm">
+                    <i data-lucide="unlock" class="text-red-400 w-8 h-8 flex-shrink-0"></i>
+                    <div>
+                        <p class="text-sm font-bold text-white">Acceso no autorizado a cuentas</p>
+                        <p class="text-xs text-slate-400">Unauthorized access to accounts</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/80 border border-slate-700 p-4 rounded flex items-center gap-4 backdrop-blur-sm">
+                    <i data-lucide="file-minus-2" class="text-red-400 w-8 h-8 flex-shrink-0"></i>
+                    <div>
+                        <p class="text-sm font-bold text-white">Pérdida de información sensible</p>
+                        <p class="text-xs text-slate-400">Loss of sensitive information</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/80 border border-red-900/50 p-4 rounded flex items-center gap-4 backdrop-blur-sm shadow-[0_0_15px_rgba(239,68,68,0.15)]">
+                    <i data-lucide="credit-card" class="text-red-500 w-8 h-8 flex-shrink-0"></i>
+                    <div>
+                        <p class="text-sm font-bold text-white">Fraudes financieros</p>
+                        <p class="text-xs text-slate-400">Financial fraud</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/80 border border-slate-700 p-4 rounded flex items-center gap-4 backdrop-blur-sm">
+                    <i data-lucide="trending-down" class="text-red-400 w-8 h-8 flex-shrink-0"></i>
+                    <div>
+                        <p class="text-sm font-bold text-white">Daño reputacional</p>
+                        <p class="text-xs text-slate-400">Reputational damage</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/80 border border-slate-700 p-4 rounded flex items-center gap-4 backdrop-blur-sm">
+                    <i data-lucide="venetian-mask" class="text-red-400 w-8 h-8 flex-shrink-0"></i>
+                    <div>
+                        <p class="text-sm font-bold text-white">Suplantación en redes sociales</p>
+                        <p class="text-xs text-slate-400">Identity spoofing on social media</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/80 border border-slate-700 p-4 rounded flex items-center gap-4 backdrop-blur-sm">
+                    <i data-lucide="briefcase" class="text-red-400 w-8 h-8 flex-shrink-0"></i>
+                    <div>
+                        <p class="text-sm font-bold text-white">Uso indebido de datos académicos/profesionales</p>
+                        <p class="text-xs text-slate-400">Misuse of academic/professional data</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN 5: CÓMO PROTEGER / HOW TO PROTECT
+             ========================================== -->
+        <section class="py-20 px-10 bg-white bg-tech-grid relative vertical-line border-b border-slate-200">
+            <div class="text-center mb-16 relative z-10">
+                <i data-lucide="shield-plus" class="w-12 h-12 text-cyan-500 mx-auto mb-4"></i>
+                <h2 class="text-3xl font-extrabold text-slate-900">CÓMO PROTEGER TU IDENTIDAD</h2>
+                <h3 class="text-xl font-medium text-cyan-600 italic mt-1">How to Protect Your Identity</h3>
+                <p class="text-sm text-slate-500 mt-4 max-w-2xl mx-auto">
+                    Buenas prácticas recomendadas por organizaciones de ciberseguridad.<br>
+                    <span class="italic text-xs">Best practices recommended by cybersecurity organizations.</span>
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-8 relative z-10">
+                
+                <!-- Práctica 1 -->
+                <div class="flex flex-col md:flex-row gap-6 items-start md:items-center p-4 rounded-xl hover:bg-slate-50 transition">
+                    <div class="w-14 h-14 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0 border border-cyan-200 text-cyan-600">
+                        <i data-lucide="asterisk" class="w-7 h-7"></i>
+                    </div>
+                    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-base mb-1">Contraseñas robustas y únicas</h4>
+                            <p class="text-sm text-slate-600">Combina letras, números y caracteres. No reutilices la misma clave.</p>
+                        </div>
+                        <div class="md:border-l border-slate-200 md:pl-4">
+                            <h4 class="font-semibold text-slate-500 text-sm mb-1 italic">Strong and unique passwords</h4>
+                            <p class="text-xs text-slate-400 italic">Combine letters, numbers, and symbols. Never reuse passwords.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Práctica 2 -->
+                <div class="flex flex-col md:flex-row gap-6 items-start md:items-center p-4 rounded-xl hover:bg-slate-50 transition">
+                    <div class="w-14 h-14 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0 border border-cyan-200 text-cyan-600">
+                        <i data-lucide="smartphone-nfc" class="w-7 h-7"></i>
+                    </div>
+                    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-base mb-1">Autenticación Multifactor (MFA)</h4>
+                            <p class="text-sm text-slate-600">Añade una capa extra de seguridad para dificultar accesos no autorizados.</p>
+                        </div>
+                        <div class="md:border-l border-slate-200 md:pl-4">
+                            <h4 class="font-semibold text-slate-500 text-sm mb-1 italic">Multi-Factor Authentication (MFA)</h4>
+                            <p class="text-xs text-slate-400 italic">Adds an extra layer of security to prevent unauthorized access.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Práctica 3 -->
+                <div class="flex flex-col md:flex-row gap-6 items-start md:items-center p-4 rounded-xl hover:bg-slate-50 transition">
+                    <div class="w-14 h-14 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0 border border-cyan-200 text-cyan-600">
+                        <i data-lucide="eye-off" class="w-7 h-7"></i>
+                    </div>
+                    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-base mb-1">Limitar exposición personal</h4>
+                            <p class="text-sm text-slate-600">Controla lo que compartes en redes y revisa tu privacidad.</p>
+                        </div>
+                        <div class="md:border-l border-slate-200 md:pl-4">
+                            <h4 class="font-semibold text-slate-500 text-sm mb-1 italic">Limit personal exposure</h4>
+                            <p class="text-xs text-slate-400 italic">Control what you share on social media and check privacy settings.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Práctica 4 -->
+                <div class="flex flex-col md:flex-row gap-6 items-start md:items-center p-4 rounded-xl hover:bg-slate-50 transition">
+                    <div class="w-14 h-14 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0 border border-cyan-200 text-cyan-600">
+                        <i data-lucide="refresh-cw" class="w-7 h-7"></i>
+                    </div>
+                    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-base mb-1">Mantener dispositivos actualizados</h4>
+                            <p class="text-sm text-slate-600">Las actualizaciones corrigen vulnerabilidades que explotan los atacantes.</p>
+                        </div>
+                        <div class="md:border-l border-slate-200 md:pl-4">
+                            <h4 class="font-semibold text-slate-500 text-sm mb-1 italic">Keep devices updated</h4>
+                            <p class="text-xs text-slate-400 italic">Updates patch critical vulnerabilities exploited by attackers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Práctica 5 -->
+                <div class="flex flex-col md:flex-row gap-6 items-start md:items-center p-4 rounded-xl hover:bg-slate-50 transition">
+                    <div class="w-14 h-14 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0 border border-cyan-200 text-cyan-600">
+                        <i data-lucide="link" class="w-7 h-7"></i>
+                    </div>
+                    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-base mb-1">Verificar legitimidad</h4>
+                            <p class="text-sm text-slate-600">Confirma que los enlaces y correos provienen de fuentes seguras.</p>
+                        </div>
+                        <div class="md:border-l border-slate-200 md:pl-4">
+                            <h4 class="font-semibold text-slate-500 text-sm mb-1 italic">Verify legitimacy</h4>
+                            <p class="text-xs text-slate-400 italic">Confirm that links and emails come from trusted sources.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN 6: CASO REAL & FOOTER
+             ========================================== -->
+        <section class="py-16 px-10 bg-slate-50 relative">
+            <div class="max-w-4xl mx-auto">
+                
+                <div class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm mb-12 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-wider rounded-bl-lg">
+                        Estudio de Caso / Case Study
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                        <i data-lucide="facebook" class="text-blue-600 w-6 h-6"></i> Filtración masiva en Facebook (2021)
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-sm text-slate-700 leading-relaxed text-justify mb-4">
+                                Se hizo pública una base de datos con información personal de aproximadamente <strong>533 millones de usuarios</strong> de más de 100 países. Se expusieron teléfonos, nombres y ubicaciones. Este incidente demostró que incluso las plataformas tecnológicas más grandes pueden sufrir incidentes que comprometan la privacidad de sus usuarios.
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-500 italic leading-relaxed text-justify">
+                                A database containing personal information of approximately <strong>533 million users</strong> from over 100 countries became public. Phone numbers, names, and locations were exposed. This incident proved that even the largest tech platforms can suffer breaches that compromise user privacy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-cyan-900 text-white p-8 rounded-2xl text-center mb-12 bg-circuit-light">
+                    <h3 class="font-bold text-lg text-cyan-300 mb-4 uppercase tracking-wider">Reflexión / Reflection</h3>
+                    <p class="text-sm text-slate-200 mb-4 max-w-2xl mx-auto">
+                        Proteger la identidad digital no es únicamente responsabilidad de las empresas tecnológicas, sino de cada usuario. Adoptar hábitos seguros reduce significativamente el riesgo.
+                    </p>
+                    <p class="text-xs text-cyan-200 italic max-w-2xl mx-auto">
+                        Protecting digital identity is not solely the responsibility of tech companies, but of every user. Adopting safe habits significantly reduces the risk.
+                    </p>
+                </div>
+
+                <!-- Fuentes / Bibliografía -->
+                <div class="border-t border-slate-200 pt-8 mt-12">
+                    <h4 class="text-xs font-bold text-slate-800 uppercase mb-4 tracking-wider">Fuentes / Sources (APA 7)</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-[10px] text-slate-500 font-mono">
+                        <p>• IBM Security. (2024). Cost of a Data Breach Report.</p>
+                        <p>• NIST. (2023). Digital Identity Guidelines (SP 800-63).</p>
+                        <p>• CISA. (2024). Avoiding Social Engineering and Phishing.</p>
+                        <p>• ENISA. (2024). Threat Landscape 2024.</p>
+                        <p>• Microsoft. (2024). Digital Defense Report.</p>
+                        <p>• Kaspersky. (2024). Cybersecurity Resource Center.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Inicializar Iconos Lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
